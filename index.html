@@ -218,7 +218,7 @@
                 let barcodes = timpa.split("\n");
                 barcodes.sort((a,b)=> a.substr(0, 7).localeCompare(b.substr(0, 7)));
                 console.log(barcodes);
-                let newBarcodes = barcodes.map(a => `${a.slice(-6)},1\n`);        
+                let newBarcodes = barcodes.map(a => `${a.slice(-7)},1\n`);        
                 hasilnye.innerHTML = newBarcodes.join('');
                 Swal.fire({
                     icon: "success",
